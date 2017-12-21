@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+ box-sizing: border-box;
+}
+    
+html {
+	font-family: "Lucida Sans", sans-serif;
+}
+    
+[class*= 'col-']{
+  float: left;
+  padding: 15px;
+}
+
+.row::after {
+  content: '';  
+  display: table;
+  clear: both;
+  
+}
+
+.col-3 {
+ width: 25%;
+}
+
+.col-9 {
+ width: 75%;
+}    
+
+.col-12 {
+ width: 100%;
+}
+    
+
+.header {
+  padding: 25px;
+  color: white;
+  font-weight: bold;
+  background-color: red;
+  text-align: center;    
+}  
+
+.menu ul li {
+	background-color: blue;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;    
+}
+
+.menu ul{
+    list-style-type: none;
+	padding: 0;
+    margin: 0;
+}
+
+.menu ul li:hover {
+	background-color: red;    
+}
+
+@media screen and (max-width: 768px) {
+  [class*='col-'] {
+    width: 100%;
+  }
+}
+
+.gallery {
+    border: 1px solid #ccc;
+    padding: 5px;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px;
+}
+    
+.gallery:hover {
+    border: 1px solid red;    
+}    
+
+.anchor-cls {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    background-color: greenyellow;
+
+}
+
+.img-cls {
+    width: 100%;
+    height: inherit;
+}
+
+.content-cls {
+
+}
+    
+.desc-cls {
+    background-color: yellow;
+    color: red;
+    text-align: center;
+    padding: 15px;   
+
+}
+.navigation-bar-cls {
+    list-style-type: none;    
+    width: 100%;
+    margin: 0;
+    padding: 0;    
+    background-color: aqua;    
+    overflow: hidden;
+} 
+    
+.list-cls {
+    float: left;
+}
+
+.link-cls {
+    display: block;
+    text-align: center;
+    color: red;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.list-cls:hover .link-cls{
+    background-color: black;
+    color: white;
+}
+    
+.float-right {
+    float: right;
+}
+    
+.opacity-cls {
+    opacity: 0.4;
+}    
+    
+    
+</style>
+</head>
+<body>
+
+   
+
+<div class="header">
+  <h1>Header section</h1>
+</div>
+    
+<div class="row col-12" style="margin: 0;padding: 0">
+    <ul class="navigation-bar-cls">
+        <li class="list-cls">
+            <a class="link-cls"><strong>BR </strong>Architects</a>
+        </li>
+        <li class="list-cls float-right">
+            <a class="link-cls">Projects</a>
+        </li>
+        <li class="list-cls float-right">
+            <a class="link-cls">About</a>
+        </li>
+        <li class="list-cls float-right">
+            <a class="link-cls">Contact</a>
+        </li>
+    </ul>
+</div>     
+
+    
+<div class="row">
+
+<div class="col-3 menu" style="padding-left: 0;">
+  <ul>
+    <li>The Flight</li>
+    <li>The City</li>
+    <li>The Island</li>
+    <li>The Food</li>
+  </ul>
+</div>
+
+<div class="col-9">
+  <h1>The City</h1>
+  <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+    
+  <div class="row">
+      <div class="col-3 gallery">
+          <a href="#" class="anchor-cls">
+              <img class="img-cls" src="./images/Chrysanthemum.jpg">
+          </a>
+          <div class="desc-cls">
+              <h1 class="content-cls">Resize the browser</h1>
+              <h3 class="opacity-cls">Resize the browser</h3>
+              <p>
+                  Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum
+              </p>
+          </div>
+      </div>
+
+      <div class="col-3 gallery">
+           <a href="#" class="anchor-cls">
+              <img class="img-cls" src="./images/Chrysanthemum.jpg">
+          </a>
+          <div class="desc-cls">
+              <h1 class="content-cls">Resize the browser</h1>
+              <h3 class="opacity-cls">Resize the browser</h3>
+              <p>
+                  Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum
+              </p>
+          </div>
+      </div>
+
+      <div class="col-3 gallery">
+           <a href="#" class="anchor-cls">
+              <img class="img-cls" src="./images/Chrysanthemum.jpg">
+          </a>
+          <div class="desc-cls">
+              <h1 class="content-cls">Resize the browser</h1>
+              <h3 class="opacity-cls">Resize the browser</h3>
+              <p>
+                  Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum
+              </p>
+          </div>
+      </div>
+
+      <div class="col-3 gallery">
+           <a href="#" class="anchor-cls">
+              <img class="img-cls" src="./images/Chrysanthemum.jpg">
+          </a>
+          <div class="desc-cls">
+              <h1 class="content-cls">Resize the browser</h1>
+              <h3 class="opacity-cls">Resize the browser</h3>
+              <p>
+                  Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum
+              </p>
+              
+          </div>
+      </div>  
+  </div>    
+  <div>
+      After clear fix
+  </div>    
+   
+    
+    
+</div>
+
+</div>
+
+</body>
+</html>
